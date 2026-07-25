@@ -1,4 +1,6 @@
-package com.alfajorxd.web.product.domain;
+package com.alfajorxd.web.product.domain.port;
+
+import com.alfajorxd.web.product.domain.entity.Product;
 
 import java.util.List;
 import java.util.Optional;

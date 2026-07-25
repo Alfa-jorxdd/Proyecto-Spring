@@ -1,7 +1,7 @@
 package com.alfajorxd.web.product.infrastucture.database;
 
-import com.alfajorxd.web.product.domain.Product;
-import com.alfajorxd.web.product.domain.ProductRepository;
+import com.alfajorxd.web.product.domain.entity.Product;
+import com.alfajorxd.web.product.domain.port.ProductRepository;
 import com.alfajorxd.web.product.infrastucture.database.entity.ProductEntity;
 import com.alfajorxd.web.product.infrastucture.database.mapper.ProductEntityMapper;
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,6 @@
 package com.alfajorxd.web.product.infrastucture.database.mapper;
 
-import com.alfajorxd.web.product.domain.Product;
+import com.alfajorxd.web.product.domain.entity.Product;
 import com.alfajorxd.web.product.infrastucture.database.entity.ProductEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;

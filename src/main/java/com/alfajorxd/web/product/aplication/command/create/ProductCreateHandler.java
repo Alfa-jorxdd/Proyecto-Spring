@@ -1,8 +1,8 @@
 package com.alfajorxd.web.product.aplication.command.create;
 
 import com.alfajorxd.web.common.mediator.RequestHandler;
-import com.alfajorxd.web.product.domain.Product;
-import com.alfajorxd.web.product.domain.ProductRepository;
+import com.alfajorxd.web.product.domain.entity.Product;
+import com.alfajorxd.web.product.domain.port.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

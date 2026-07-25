@@ -1,4 +1,4 @@
-package com.alfajorxd.web.product.domain;
+package com.alfajorxd.web.product.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

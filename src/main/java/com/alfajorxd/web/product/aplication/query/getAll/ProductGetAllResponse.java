@@ -1,6 +1,6 @@
 package com.alfajorxd.web.product.aplication.query.getAll;
 
-import com.alfajorxd.web.product.domain.Product;
+import com.alfajorxd.web.product.domain.entity.Product;
 import lombok.Builder;
 import lombok.Data;
 

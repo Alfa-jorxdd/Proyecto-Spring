@@ -1,6 +1,5 @@
 package com.alfajorxd.web.product.infrastucture.api;
 
-import com.alfajorxd.web.product.domain.Product;
 import com.alfajorxd.web.product.infrastucture.api.dto.ProductDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
