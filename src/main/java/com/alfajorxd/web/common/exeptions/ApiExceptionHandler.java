@@ -1,4 +1,4 @@
-package com.alfajorxd.web.common.mediator.exeptions;
+package com.alfajorxd.web.common.exeptions;
 
 import com.alfajorxd.web.product.domain.exception.ProductNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;

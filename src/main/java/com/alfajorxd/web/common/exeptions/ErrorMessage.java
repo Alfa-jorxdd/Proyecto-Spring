@@ -1,4 +1,4 @@
-package com.alfajorxd.web.common.mediator.exeptions;
+package com.alfajorxd.web.common.exeptions;
 
 import lombok.Data;
 

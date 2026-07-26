@@ -8,7 +8,9 @@ import com.alfajorxd.web.product.aplication.query.getAll.ProductGetAllResponse;
 import com.alfajorxd.web.product.aplication.query.getAll.ProductGetAlllRequest;
 import com.alfajorxd.web.product.aplication.query.getById.ProductGetByIdRequest;
 import com.alfajorxd.web.product.aplication.query.getById.ProductGetByIdResponse;
+import com.alfajorxd.web.product.infrastucture.api.dto.CreateProductDTO;
 import com.alfajorxd.web.product.infrastucture.api.dto.ProductDTO;
+import com.alfajorxd.web.product.infrastucture.api.dto.UpdateProductDTO;
 import com.alfajorxd.web.product.infrastucture.api.mapper.ProductMapper;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -43,7 +45,7 @@ public class ProductController implements ProductApi {
     }
 
     @PostMapping
-    public ResponseEntity<Void> saveProduct(@RequestBody @Valid ProductDTO productDto){
+    public ResponseEntity<Void> saveProduct(@ModelAttribute @Valid CreateProductDTO productDto){
         ProductCreateRequest request = productMapper.mapToProductCreateRequest(productDto);
 
         mediator.dispatch(request);
@@ -52,7 +54,7 @@ public class ProductController implements ProductApi {
     }
 
     @PutMapping
-    public ResponseEntity<Void> updateProduct(@RequestBody @Valid ProductDTO product){
+    public ResponseEntity<Void> updateProduct(@ModelAttribute @Valid UpdateProductDTO product){
         ProductUpdateRequest request = productMapper.mapToProductUpdateRequest(product);
         mediator.dispatch(request);
         return ResponseEntity.noContent().build();
